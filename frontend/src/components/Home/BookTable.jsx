@@ -22,17 +22,17 @@ export default function ({ books }) {
       </thead>
       <tbody>
         {books.map((book, index) => (
-          <tr key={index} className="h-10">
+          <tr key={index} className="h-10 capitalize">
             <td className="border border-slate-700 rounded-md text-center">
               {index + 1}
             </td>
-            <td className="border border-slate-700 rounded-md text-center ">
+            <td className="border border-slate-700 rounded-md text-center capitalize ">
               {book.title}
             </td>
-            <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+            <td className="border border-slate-700 rounded-md text-center max-md:hidden capitalize">
               {book.author}
             </td>
-            <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+            <td className="border border-slate-700 rounded-md text-center max-md:hidden capitalize">
               {book.publishYear}
             </td>
             <td className="border border-slate-700 rounded-md text-center ">
